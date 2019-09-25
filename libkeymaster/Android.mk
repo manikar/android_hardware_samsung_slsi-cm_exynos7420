@@ -25,9 +25,10 @@ LOCAL_SRC_FILES := keymaster_mobicore.cpp tlcTeeKeymaster_if.c
 LOCAL_C_INCLUDES := \
 	external/openssl/include \
 	$(MOBICORE_PATH)/daemon/ClientLib/public \
-	$(MOBICORE_PATH)/common/MobiCore/inc/
+	$(MOBICORE_PATH)/common/MobiCore/inc/ \
+	$(TOP)/platform/system/gatekeeper/include
 LOCAL_C_FLAGS = -fvisibility=hidden -Wall -Werror
-LOCAL_SHARED_LIBRARIES := libcrypto liblog libMcClient libnativehelper
+LOCAL_SHARED_LIBRARIES := libcrypto liblog libMcClient libnativehelper libgatekeeper
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 
