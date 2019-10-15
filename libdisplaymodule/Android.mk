@@ -38,7 +38,6 @@ LOCAL_HEADER_LIBRARIES := generated_kernel_headers
 LOCAL_SRC_FILES := \
 	ExynosPrimaryDisplay.cpp
 
-LOCAL_MODULE_TAGS := eng
 LOCAL_MODULE := libdisplaymodule
 include $(BUILD_SHARED_LIBRARY)
 
